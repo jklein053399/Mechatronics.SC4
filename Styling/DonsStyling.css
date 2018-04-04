@@ -132,12 +132,13 @@ body {
 	left: -8px;
 	position: absolute;
     /* The image used */
-    background-image: url("../Images/RobotBG.jpg");
+    background-image: url("");
 
     /* Center and scale the image nicely */
     background-repeat: no-repeat;
     background-size: cover;
 	font-family: Arial, Helvetica;
+	background-color: black;
 }
 h2 {
 	font-size: 1em	
@@ -238,6 +239,8 @@ header {
 .summImg {
 	height: 0px;
 	width: 0px;
+	border: 0px solid transparent;
+	border-radius: 0%;
 }
 .infoList{
 	list-style-type: none;
