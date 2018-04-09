@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hydraulic Videos</title>
+</head>
+<style>
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	height: auto;
+	width: 100%;	
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	overflow: none;
+}
+main {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: grey;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.show {
+    display: block;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown-content a {text-align: center;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+.mainHeading h2 {
+	text-align: center;
+}
+.mainHeading p {
+	text-align: left;
+}
+.mainHeading {
+	color: black;
+	width: 75%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	border: 2px solid grey;
+	border-top: none;
+	background-color: rgba(175,175,175,.75);
+	font-family: Arial, Helvetica;
+}
+.videoBlockA {
+	width: 40%;
+	margin-right: auto;
+	text-align: center;
+	float: left;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+.videoBlockB {
+	width: 40%;
+	margin-left: auto;
+	text-align: center;
+	float: right;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+#videoList {
+	display: inline-block;
+}
+
+</style>
+</head>
+<body>
+<header>
+<div class="topnav" id="myTopnav">
+<a href="#home">Home</a>
+	<a href="#Contact">Contact</a>
+	<div class="dropdown">
+	<button class="dropbtn" onclick="dropRobo()">Robotics
+		  <i class="fa fa-caret-down"></i>
+	</button>
+	<div class="dropdown-content" id="roboDrop">
+		<a href="#PlaceHolder">PlaceHolder</a>
+        <a href="#PlaceHolder">Resources</a>
+		<a href="#PlaceHolder">Videos</a>
+    </div>
+  </div> 
+    <div class="dropdown">
+    <button class="dropbtn" onclick="dropPlcs()">PLCs
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="plcsDrop">
+		<a href="#PlaceHolder">Symbology</a>
+		<a href="#PlaceHolder">Resources</a>
+        <a href="#PlaceHolder">Videos by Students</a>
+		<a href="#PlaceHolder">Interactive Tools</a>
+    </div>
+  </div> 
+     <div class="dropdown">
+    <button class="dropbtn" onclick="dropHydr()">Hydraulics
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="hydrDrop">
+		<a href="#PlaceHolder">Symbology</a>
+		<a href="#PlaceHolder">Resources</a>
+        <a href="#PlaceHolder">Videos by Students</a>
+		<a href="#PlaceHolder">Interactive Tools</a>
+    </div>
+  </div> 
+     <div class="dropdown">
+    <button class="dropbtn" onclick="dropPneum()">Pneumatics
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="pneumDrop">
+		<a href="#PlaceHolder">Symbology</a>
+		<a href="#PlaceHolder">Resources</a>
+        <a href="#PlaceHolder">Videos by Students</a>
+		<a href="#PlaceHolder">Interactive Tools</a>
+    </div>
+  </div> 
+     <div class="dropdown">
+    <button class="dropbtn" onclick="dropControl()">Control Circuits
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="controlDrop">
+		<a href="#PlaceHolder">Symbology</a>
+		<a href="#PlaceHolder">Resources</a>
+        <a href="#PlaceHolder">Videos by Students</a>
+		<a href="#PlaceHolder">Interactive Tools</a>
+    </div>
+	</div>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</header>
+<main>
+<div class="mainHeading">
+	<h2>Hydraulics</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id vulputate leo. Nam egestas accumsan placerat.
+		Pellentesque id dolor facilisis felis aliquet laoreet. Morbi tempor rhoncus orci, at placerat urna ultricies non.
+		Etiam in auctor est. Praesent molestie velit leo. Nunc id sodales nulla. Vestibulum eget posuere elit. Fusce pharetra congue orci quis porta.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id vulputate leo. Nam egestas accumsan placerat.
+		Pellentesque id dolor facilisis felis aliquet laoreet. Morbi tempor rhoncus orci, at placerat urna ultricies non.
+		Etiam in auctor est. Praesent molestie velit leo. Nunc id sodales nulla. Vestibulum eget posuere elit. Fusce pharetra congue orci quis porta.
+	</p>
+</div>
+<section id="videoList">
+<div class="videoBlockA"><div id="HydraulicPress"><p><strong> Test 1 A - Pneumatic Circuit - Students: Damion Kincaid, Jacklyn Radford, Mike Precor and Matt Tesnovich</strong></p></div>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/0ykotkadtlE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<p><strong>Boolean Logic and Pneumatic Circuit - </strong> This video demonstrates the process of simplifying boolean logic and building a pneumatic circuit based on the boolean logic of AB+AC+BC
+	(A and B , or A and C , or B and C)</p>
+</div>
+<div class="videoBlockB"><div id="HydraulicPress"><p><strong> Test 1 A - Pneumatic Circuit - Students: David Miller, Danny Perez and Robert White</strong></div>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/G5hmeUsA4_o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<p><strong>Boolean Logic and Pneumatic Circuit - </strong> This video demonstrates the process of simplifying boolean logic and building a pneumatic circuit based on the boolean logic of AC^D+BCD+^ACD+^BCD
+	(A and C and NOT D , or B and C and D , or NOT A and C and D , or NOT B and C and D)</p>
+</div>
+<div class="videoBlockA"><div id="HydraulicPress"><p><strong> ETM 140 Midterm - Presented By The Danger Zone - Students: Dave, Mike and Joe</strong></p></div>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/v97OUSK9iDY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<p><strong>Hydraulic Circuit - </strong>This video follows the three students designing and proving out a Hydraulic wood splitting system, specifically the conveyor operation.</p>
+</div>
+<div class="videoBlockB"><div id="HydraulicPress"><p><strong> Practical Test #1 Pneumatics & Hydraulics #2 - Students: Derek Lepla and Joe Green</strong></p></div>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/UX9Wds6OnVs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<p><strong>Hydraulic Press - </strong> this video was created for the practical portion of Test 1, covering chapters 7-9, book - <a href="#ToBookLocation">BLAH BLAH Education.<a>
+	This video will answer any questions regarding nuclear thermodynamics, big bang theories, the evolution of the short arm T-Rex and some basic fluid power stuff.</p>
+</div>
+<div class="videoBlockA"><div id="HydraulicPress"><p><strong> Test 1 A - Pneumatic Circuit - Students: Hayley, Johnny and Robert</strong></p></div>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/6ZwtPmkbsKk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<p><strong>Boolean Logic and Pneumatic Circuit - </strong>  This video demonstrates the process of simplifying boolean logic and building a pneumatic circuit based on the boolean logic of ^ABC+A^BC+AB^C+ABC
+	(NOT A and B and C , or A and NOT B and C , or A and B and NOT C , or A and B and C)</p>
+</div>
+<div class="videoBlockB"><div id="HydraulicPress"><p><strong> ETM 240 Pneumatic Control Circuit - Students: Alex Callewaert and Cameron Mirling</strong></p></div>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/HwNlIvAsOkw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<p><strong>Boolean Logic and Pneumatic Circuit - </strong>  This video demonstrates the process of simplifying boolean logic and building a pneumatic circuit based on the boolean logic of AC^D+BCD+ACD+^BCD
+	(A and C and NOT D , or B and C and D , or A and C and D , or NOT B and C and D)</p>
+</div>
+<div class="videoBlockA"><div id="HydraulicPress"><p><strong>Using Logic to Simplify a Pneumatic Cylinder Circuit - Students: Desi Kuntz and Jeremy Jonson</strong></p></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Wo5QgwUShUk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<p><strong>Boolean Logic and Pneumatic Circuit - </strong>  This video demonstrates the process of simplifying boolean logic and building a pneumatic circuit based on the boolean logic of ABCD+^ABCD+AB^CD+^AB^CD
+	(A and B and C and D , or NOT A and B and C and D , or A and B and NOT C and D , or NOT A and B and NOT C and D)</p>
+</div>
+<div class="videoBlockB"><div id="HydraulicPress"><p><strong>Pneumatic Logic Circuit - Student: Dylan Langolf </strong></p></div>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/cfjKk79uXr8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<p><strong>Boolean Logic and Pneumatic Circuit - </strong>  This video demonstrates the process of simplifying boolean logic and building a pneumatic circuit based on the boolean logic of AB+ABC+ABCD
+	(A and B , or A and B and C , or A and B and C and D)</p>
+</div>
+</section>
+
+</main>
+<footer>
+</footer>
+</body>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</html>
