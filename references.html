@@ -1,0 +1,600 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>References</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        h3{
+            margin: 0;
+        }
+        p {
+            margin: 0;
+        }
+
+        body {
+            background-color: lightblue;
+        }
+
+        .menu {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .menu div a {
+            display: inline;
+            padding: 12px;
+            color: black;
+            font-family: Arial;
+
+        }
+
+        .menu div a:hover {
+            color: black;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .menu div a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        .menu div div {
+            display: inline;
+            float: right;
+        }
+
+        .container-fluid {
+            max-width: 1120px;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .menu-container {
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+
+        .reference-container {
+            height: auto;
+            margin-top: 25px;
+            border: 2px solid black;
+            background-color: ghostwhite;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 0px darkslategray;
+        }
+
+        .reference-block {
+            position: relative;
+            color: black;
+            height: auto;
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid grey;
+            border-radius: 3px;
+            box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, .5);
+        }
+
+        .reference-info {
+            display: inline-flex;
+            width: 98%;
+        }
+
+        .reference-icon {
+            position: absolute;
+            right: 5px;
+        }
+
+        .reference-header {
+            display: inline-flex;
+            width: 98%;
+            position: relative;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .reference-header-title {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .hamburger-menu {
+            font-size: 26px;
+            margin-top: 10px;
+            position: relative;
+            right: 0px;
+        }
+
+        .details-show {
+            display: block;
+        }
+
+        .hide {
+            display: none;
+        }
+        .reference-details h5{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container-fluid menu-container">
+    <div class="menu">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="references.html">References</a>
+            <a href="videos.html">Videos</a>
+            <a href="equations.html">Equations</a>
+            <div class="search-bar-container" title="Currently unavailable. Please try again later!">
+                <input style="cursor: not-allowed;" type="text" placeholder="Search.." name="search">
+                <button style="cursor: not-allowed;" type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="reference-container etm110">
+        <div class="reference-header">
+            <div class="reference-header-title">
+                <h3>ETM-110 References</h3>
+            </div>
+            <i onclick="openReference(this)" class="hamburger-menu fa fa-navicon"></i>
+        </div>
+        <div class="reference-list hide">
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reference-container etm120">
+        <div class="reference-header">
+            <div class="reference-header-title">
+                <h3>ETM-120 References</h3>
+            </div>
+            <i onclick="openReference(this)" class="hamburger-menu fa fa-navicon"></i>
+        </div>
+        <div class="reference-list hide">
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reference-container etm130">
+        <div class="reference-header">
+            <div class="reference-header-title">
+                <h3>ETM-130 References</h3>
+            </div>
+            <i onclick="openReference(this)" class="hamburger-menu fa fa-navicon"></i>
+        </div>
+        <div class="reference-list hide">
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reference-container etm140">
+        <div class="reference-header">
+            <div class="reference-header-title">
+                <h3>ETM-140 References</h3>
+            </div>
+            <i onclick="openReference(this)" class="hamburger-menu fa fa-navicon"></i>
+        </div>
+        <div class="reference-list hide">
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reference-container etm150">
+        <div class="reference-header">
+            <div class="reference-header-title">
+                <h3>ETM-150 References</h3>
+            </div>
+            <i onclick="openReference(this)" class="hamburger-menu fa fa-navicon"></i>
+        </div>
+        <div class="reference-list hide">
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reference-container etm240">
+        <div class="reference-header">
+            <div class="reference-header-title">
+                <h3>ETM-240 References</h3>
+            </div>
+            <i onclick="openReference(this)" class="hamburger-menu fa fa-navicon"></i>
+        </div>
+        <div class="reference-list hide">
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reference-container etm280">
+        <div class="reference-header">
+            <div class="reference-header-title">
+                <h3>ETM-280 References</h3>
+            </div>
+            <i onclick="openReference(this)" class="hamburger-menu fa fa-navicon"></i>
+        </div>
+        <div class="reference-list hide">
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+            <div class="reference-block">
+                <div class="reference-info">
+                    <p class="reference-title">This is a placeholder for title!</p>
+                </div>
+                <span onclick="openReferenceDetails(this)" class="refernce-icon glyphicon glyphicon-menu-hamburger"></span>
+                <div class="reference-details hide">
+                    <h4>Subject Matter</h4>
+                    <h5>Article Name / URL</h5><br>
+                    <p>This reference contains calculations, speculations and a quick video about the aforementioned
+                        subject.</p><br>
+                    <a>This can contain a link to the URL or begin download of a pdf or other document.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid contact-info">
+    <h4>Contact Information:</h4>
+    <a href="mailto:someone@example.com?Subject=Website%20Support" target="_top">placeholder@email.com</a>
+    <p>Hours of Support: M-F: 5PM - 10PM</p>
+</div>
+
+</body>
+<script>
+    function openReference(item) {
+        item.parentElement.parentElement.children[1].classList.toggle("hide");
+        var x = (document.getElementsByClassName("reference-details"));
+        var i= 0;
+        for (i = 0; i < x.length; i++) {
+            if(!(x[i].classList.contains("hide"))){
+                x[i].classList.toggle("hide");
+            }else{};
+        }
+    }
+    function openReferenceDetails(item) {
+        item.nextElementSibling.classList.toggle("hide");
+    }
+
+</script>
+</html>
